@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiederholungsquiz Jan 2026</title>
+
+  <link rel="stylesheet" href="./node_modules/reveal.js/dist/reveal.css" />
+  <link rel="stylesheet" href="./node_modules/reveal.js/dist/theme/sky.css" />
+  <link rel="stylesheet" href="./node_modules/reveal.js/plugin/highlight/monokai.css" />
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Wiederholung</h1>
+        <p class="fragment">... als Quiz</p>
+      </section>
+
+      <section>
+        <h2>Inhalt</h2>
+        <ul>
+          <li>4 Fragen HTML</li>
+          <li class="fragment">4 Fragen CSS</li>
+          <li class="fragment">4 Fragen Javascript</li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+          <h2>Die Fragen</h2>
+        </section>
+        <section data-markdown="./questions.md"></section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Wie machen wir weiter?</h2>
+        </section>
+        <section data-markdown="./game.md"></section>
+      </section>
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from './node_modules/reveal.js/dist/reveal.esm.js';
+    import RevealMarkdown from './node_modules/reveal.js/plugin/markdown/markdown.esm.js';
+    import Highlight from './node_modules/reveal.js/plugin/highlight/highlight.esm.js';
+
+    Reveal.initialize( {
+      plugins: [ RevealMarkdown, Highlight ],
+      controls: true,
+      controlsTutorial: true,
+      controlsLayout: 'bottom-right',
+      controlsBackArrows: 'faded',
+      progress: true,
+      slideNumber: "c/t",
+      showSlideNumber: 'all',
+      hashOneBasedIndex: false,
+      hash: true,
+      respondToHashChanges: true,
+      jumpToSlide: true,
+      history: false,
+      keyboard: true,
+      keyboardCondition: 'focused',
+      disableLayout: false,
+      overview: true,
+      center: true,
+      touch: true,
+      loop: false,
+      rtl: false,
+      navigationMode: 'linear',
+      shuffle: false,
+      fragments: true,
+      fragmentInURL: true,
+      embedded: false,
+      help: true,
+      pause: true,
+      showNotes: false,
+      autoPlayMedia: null,
+      preloadIframes: null,
+      autoAnimate: true,
+      autoAnimateMatcher: null,
+      autoAnimateEasing: 'ease',
+      autoAnimateDuration: 1.0,
+      autoAnimateUnmatched: true,
+      autoAnimateStyles: [
+        'opacity',
+        'color',
+        'background-color',
+        'padding',
+        'font-size',
+        'line-height',
+        'letter-spacing',
+        'border-width',
+        'border-color',
+        'border-radius',
+        'outline',
+        'outline-offset',
+      ],
+      autoSlide: 0,
+      autoSlideStoppable: true,
+      autoSlideMethod: null,
+      defaultTiming: null,
+      mouseWheel: false,
+      previewLinks: false,
+      postMessage: true,
+      postMessageEvents: false,
+      focusBodyOnPageVisibilityChange: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      transitionSpeed: 'default', // default/fast/slow
+      backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+      pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+      pdfSeparateFragments: true,
+      pdfPageHeightOffset: -1,
+      viewDistance: 3,
+      mobileViewDistance: 2,
+      display: 'block',
+      hideInactiveCursor: true,
+      hideCursorTime: 5000,
+    } );
+  </script>
+
+</body>
+
+</html>
