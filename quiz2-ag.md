@@ -255,7 +255,8 @@ for (let i in farben) {
 
 ## Frage 11
 
-Wie greift man auf das erste Element dieses Arrays zu?
+Wie greift man auf das erste Element dieses Arrays zu,
+wenn ich es zB mit `console.log()` ausgeben will.
 
 ```js
 let tiere = ["Katze", "Hund", "Vogel"];
@@ -270,7 +271,7 @@ let tiere = ["Katze", "Hund", "Vogel"];
 
 ## Antwort 11
 
-✅ **C) `tiere[0]`**
+✅ **C) `tiere[0]` also `console.log(tiere[0])` gibt `"Katze"` aus**
 
 Arrays starten bei Index `0`. Das erste Element ist also immer `[0]`.
 
